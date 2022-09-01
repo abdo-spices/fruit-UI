@@ -1,0 +1,526 @@
+<div class="stage anim-slide-right anim-break">
+  <h2 class="h2 text-center">utilities</h2>
+  <p class="text">there is some utilities that looks like <a class="link" href="https://tailwindcss.com/" target="_blank">tailwind utilities</a> 
+  becaues our libarary is tailwind inspirde</p>
+  <p class="text"></p>
+  <h3 class="h3 text-center">spacing</h3>
+  <p class="text">utilities for spacing like padding, margin, gap you 
+    have to type \{p,m,gap - amount\} let me explan more </p>
+  <p class="text">padding uses "p" as shorthand and margin uses "m" the defuilt values range is 12 </p>
+  
+<CH.Scrollycoding>
+
+Let's strart here we have padding utility classes for exmaple 
+  
+  
+
+  ```html app.html focus=3:9
+  ⠀
+  ⠀
+  <div class="padding-all-edges-24px"></div>
+  <div class="padding-top-and-bottom-24px"></div>
+  <div class="padding-right-and-left-24px"></div>
+  <div class="padding-top-24px"></div>
+  <div class="padding-right-24px"></div>
+  <div class="padding-bottom-24px"></div>
+  <div class="padding-left-24px"></div>
+  ⠀
+  ⠀
+  ```
+  ---
+  
+  replacing padding with p 
+
+  ```html app.html focus=3:9
+  ⠀
+  ⠀
+  <div class="p-all-24px"></div>
+  <div class="p-top-bottom-24px"></div>
+  <div class="p-right-left-24px"></div>
+  <div class="p-top-24px"></div>
+  <div class="p-right-24px"></div>
+  <div class="p-bottom-24px"></div>
+  <div class="p-left-24px"></div>
+  ⠀
+  ⠀
+  ```
+
+  ---
+
+  replacing the dirctions removing 'all' and replacing top bottom dirction with 'y' axis and right left to 'x' axis and right
+  replacing top with t etc...
+  ```html app.html focus=3:9
+  ⠀
+  ⠀
+  <div class="p-24px"></div>
+  <div class="py-24px"></div>
+  <div class="px-24px"></div>
+  <div class="pt-24px"></div>
+  <div class="pr-24px"></div>
+  <div class="pb-24px"></div>
+  <div class="pl-24px"></div>
+  ⠀
+  ⠀
+  ```
+
+  ---
+
+  replacing the value with the key of this value
+
+  ```html app.html focus=3:9
+  ⠀
+  ⠀
+  <div class="p-6"></div>
+  <div class="py-6"></div>
+  <div class="px-6"></div>
+  <div class="pt-6"></div>
+  <div class="pr-6"></div>
+  <div class="pb-6"></div>
+  <div class="pl-6"></div>
+  ⠀
+  ⠀
+  ```
+
+  ---
+
+  margin exmaple
+
+  ```html app.html focus=3:9
+  ⠀
+  ⠀
+  <div class="m-6"></div>
+  <div class="my-6"></div>
+  <div class="mx-6"></div>
+  <div class="mt-6"></div>
+  <div class="mr-6"></div>
+  <div class="mb-6"></div>
+  <div class="ml-6"></div>
+  ⠀
+  ⠀
+  ```
+
+  ---
+
+  gap exmaple
+
+  ```html app.html focus=3
+  ⠀
+  ⠀
+  <div class="gap-6"></div>
+  ⠀
+  ⠀
+  ```
+
+  ---
+  
+  
+  </CH.Scrollycoding>
+
+  <h3 class="h3 text-center">Alignment</h3>
+  <p class="text">There are alignments like \{justify,align,place\} 
+  & there are propreties \[items, content , & all slef props \] </p>
+
+
+  <CH.Scrollycoding>
+
+
+    
+    removing align keyword 
+    
+
+    ```html app.html focus=5:8
+    ⠀
+    ⠀
+    ⠀
+    ⠀
+    <div class="items-center"></div>
+    <div class="content-center"></div>
+    <div class="self-center"></div>
+    ⠀
+    ⠀
+    ```
+    
+    ---
+
+    
+    removing content 
+    
+    ```html app.html focus=5:8
+    ⠀
+    ⠀
+    ⠀
+    ⠀
+    <div class="justify-items-center"></div>
+    <div class="justify-center"></div>
+    <div class="justify-self-center"></div>
+    ⠀
+    ⠀
+    ```
+    
+    ---
+
+    
+    place propreties
+
+    ```html app.html focus=5:8
+    ⠀
+    ⠀
+    ⠀
+    ⠀
+    <div class="place-items-center"></div>
+    <div class="place-content-center"></div>
+    <div class="place-self-center"></div>
+    ⠀
+    ⠀    
+    ```
+    
+    ---
+    
+    sass map
+    
+
+    
+    ```scss maps.scss
+    $alignments: (
+      "start":   flex-start,
+      "end":     flex-end,
+      "center":  center,
+      "between": space-between,
+      "around":  space-around,
+      "evenly":  space-evenly,
+      "stretch": stretch,
+    ) !default;
+    ```
+    
+    ---
+
+    text align
+    
+
+    ```html app.html focus=3:6  
+    ⠀
+    ⠀
+    <div class="text-right"></div>
+    <div class="text-left"></div>
+    <div class="text-center"></div>
+    <div class="text-justify"></div>
+    ⠀
+    ⠀   
+    ```
+    ---
+
+     postion propreties
+    
+
+    ```html app.html focus=3:6  
+    ⠀
+    ⠀
+    <div class="absolute"></div>
+    <div class="relative"></div>
+    <div class="fixed"></div>
+    ⠀
+    ⠀   
+    ```
+    
+    
+    </CH.Scrollycoding>
+
+  <br/>
+  <br/>
+  <br/>
+  
+  <h3 class="h3 text-center">size</h3>
+  <p class="text"> </p>
+
+
+  <CH.Scrollycoding>
+
+
+    
+    wdith and height form 1 to 10 values
+    
+
+    ```html app.html focus=3:4
+    ⠀
+    ⠀
+    <div class="w-1"></div>
+    <div class="h-4"></div>
+    ⠀
+    ⠀
+    ```
+    
+    ---
+
+    custom values for width and height
+    
+    ```html app.html focus=3:6
+    ⠀
+    ⠀
+    <div class="w-screen"></div>
+    <div class="w-auto"></div>
+    <div class="w-full"></div>
+    ⠀
+    ⠀
+    ```
+    
+    ---
+
+    </CH.Scrollycoding>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <h3 class="h3 text-center">other</h3>
+  <p class="text"> </p>
+
+
+  <CH.Scrollycoding>
+
+
+    
+    border raduis
+    
+
+    ```html app.html focus=3:8
+    ⠀
+    ⠀
+    <div class="br-none"></div>
+    <div class="br-xs"></div>
+    <div class="br-sm"></div>
+    <div class="br-md"></div>
+    <div class="br-lg"></div>
+    <div class="br-full"></div>
+    ⠀
+    ⠀
+    ```
+    
+    ---
+    
+    display propreties
+
+    ```html app.html focus=3:8
+    ⠀
+    ⠀
+    <div class="none"></div>
+    <div class="block"></div>
+    <div class="inline"></div>
+    <div class="inline-block"></div>
+    <div class="inline-flex"></div>
+    <div class="inline-grid"></div>
+    ⠀
+    ⠀
+    ```
+    ---
+
+    flex dir
+    
+    ```html app.html focus=3:8
+    ⠀
+    ⠀
+    <div class="flex-flow-row"></div>
+    <div class="flex-flow-row-rev"></div>
+    <div class="flex-flow-col"></div>
+    <div class="flex-flow-col-rev"></div>
+    ⠀
+    ⠀
+    ```
+    ---
+
+    overflow
+    
+    ```html app.html focus=3:6
+    ⠀
+    ⠀
+    <div class="overflow-visible"></div>
+    <div class="overflow-hidden"></div>
+    <div class="overflow-scroll"></div>
+    ⠀
+    ⠀
+    ```
+    
+    ---
+
+    font size 
+
+    ```html app.html focus=1:8
+    <div class="font-xxs"></div>
+    <div class="font-xs"></div>
+    <div class="font-sm"></div>
+    <div class="font-md"></div>
+    <div class="font-lg"></div>
+    <div class="font-xl"></div>
+    <div class="font-xxl"></div>
+    <div class="font-xxxl"></div>
+    ```
+
+    </CH.Scrollycoding>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <h3 class="h3 text-center">size</h3>
+  <p class="text"> </p>
+
+    responsive layout the propreties support media queries 
+
+    flex-dir, font, margin, padding, display, alignments
+
+    use \{xs,sm,md,lg,xl\} with ':' and your class
+
+```html app.html
+<div class="flex">
+  <div class="justify-center items-center px-2 my-7"></div>
+</div>
+```
+
+  <CH.Scrollycoding>
+
+
+    adding media
+
+    ```html app.html focus=4
+    ⠀
+    ⠀
+    <div class="...">
+      <div class="p-4"></div>
+    </div>
+    ⠀
+    ⠀
+    ```
+
+    ---
+    
+    
+    ```html app.html focus=4
+    ⠀
+    ⠀
+    <div class="...">
+      <div class="large-screen-p-4"></div>
+    </div>
+    ⠀
+    ⠀
+    ```
+
+    ---
+    
+    
+    ```html app.html focus=4:8
+    ⠀
+    ⠀
+    <div class="...">
+      <div class="p-4"></div>
+      <div class="sm-p-4"></div>
+      <div class="md-p-4"></div>
+      <div class="lg-p-4"></div>
+      <div class="xl-p-4"></div>
+    </div>
+    ⠀
+    ⠀
+    ```
+
+    ---
+
+    
+    ```html app.html focus=4
+    ⠀
+    ⠀
+    <div class="...">
+      <div class="p-4 sm:p-6 lg:p-8"></div>
+    </div>
+    ⠀
+    ⠀
+    ```
+
+    ---
+    
+
+
+    </CH.Scrollycoding>
+
+    ```html app.html
+<div class="flex">
+  <div class="justify-center md:justify-end items-center px-2  md:px-4 my-7 lg:my-3"></div>
+</div>
+```
+
+  <br/>
+  <br/>
+  <br/>
+
+  <CH.Scrollycoding>
+
+  fruitUI provide awesome utilities api media queries
+  ```scss main.scss focus=4:11
+  ⠀
+  ⠀
+  @use "basket" as * with (
+    $utilities: (
+      $media-alignments: true,
+      $media-flex-dir: true,
+      $media-display: true,
+      $media-padding: true,
+      $media-margin: true,
+      $media-font: true,
+    ),
+  );
+  ⠀
+  ⠀
+  ```
+
+  --- 
+  add important flag to utility
+  ```scss main.scss focus=2:4
+  @use "basket" as * with (
+    $utilities: (
+      important: true,
+    ),
+  );
+  ```
+  --- 
+
+  create new utility class
+
+  ```scss main.scss focus=2:15
+  @use "basket" as * with (
+    $utilities: (
+      "my-util": (
+        class: "uitl",
+        state: hover,
+        property: color,
+        media: true,
+        important: true,
+        values: (
+          ppp: #fff,
+          ddd: #ddd,
+          eee: #ccc
+        ),
+      )
+    ),
+  );
+  ```
+
+  ---
+
+  color utilities
+
+  ```scss main.scss focus=2:12
+  @use "basket" as * with (
+    $colors: (
+      custom: (
+        50: #fff,
+        100: rgb(230, 48, 48),
+        200: rgb(47, 47, 211),
+      )
+    )
+  );
+
+  @include useShades(900,50);
+
+  ```
+
+
+</CH.Scrollycoding>
+
+</div>

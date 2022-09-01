@@ -1,0 +1,101 @@
+@mixin checkers {
+  $checkers-size: 21px;
+  %checkers {
+    transition: all 0.1s ease-out;
+    border: 1px solid $gray-400;
+    -webkit-appearance: none;
+    height: $checkers-size;
+    width: $checkers-size;
+    border-radius: 7px;
+    display: inline-flex;
+    vertical-align: top;
+    position: relative;
+    margin: $margin * 0.5;
+    background: rgba(255, 255, 255, 0.857);
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      border-color: $primary;
+    }
+    &:checked {
+      border-color: $primary;
+      background: $primary;
+    }
+    &::after {
+      transition: opacity 0.2s, transform 0.4s cubic-bezier(1, 0.235, 0, 1.65);
+      content: "";
+      display: block;
+      position: relative;
+      opacity: 0;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .checkbox {
+    @extend %checkers;
+    &::after {
+      width: 5px;
+      height: 9px;
+      border: 2px solid #fff;
+      border-top: 0;
+      border-left: 0;
+      left: 7px;
+      top: 4px;
+      transform: rotate(160deg);
+    }
+    &:checked {
+      &::after {
+        transform: rotate(43deg);
+        opacity: 1;
+      }
+    }
+  }
+  // switch
+  .switch {
+    border-radius: 11px;
+    @extend %checkers;
+    width: 38px;
+    &:after {
+      left: 1px;
+      top: 1px;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      background-color: $gray-400;
+      transform: translateX(0);
+      opacity: 1;
+      &:hover {
+        width: 19px;
+      }
+    }
+    &:checked {
+      &::after {
+        transform: translateX(17px);
+        background-color: #fff;
+        transition: transform 0.5s cubic-bezier(1, 0.235, 0, 1.65);
+      }
+    }
+  }
+  // radio
+  .radio {
+    @extend %checkers;
+    border-radius: 50%;
+    &:after {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      position: relative;
+      background: #fff;
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    &:checked {
+      background-color: $primary;
+      &::after {
+        opacity: 1;
+        transform: scale(0.5);
+      }
+    }
+  }
+}

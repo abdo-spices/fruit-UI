@@ -1,0 +1,77 @@
+@use "sass:math";
+
+@import "../base/button";
+@import "../base/navbar";
+@import "../base/card";
+@import "../base/forms";
+@import "../base/checkers";
+
+@import "../other/badge";
+@import "../other/table";
+
+@import "../awesome/prototype";
+
+$components: (
+  base: (
+    button: ture,
+    navbar: ture,
+    card: ture,
+    forms: ture,
+    checkers: ture,
+  ),
+  other: (
+    badge: ture,
+    table: ture,
+  ),
+  awesome: (
+    prototype: ture,
+  ),
+) !default;
+
+$base: map-get($components, "base");
+$other: map-get($components, "other");
+$awesome: map-get($components, "awesome");
+
+$button: map-get($base,   "button");
+$navbar: map-get($base,   "navbar");
+$card:   map-get($base,   "card");
+$forms:  map-get($base,   "forms");
+$checkers: map-get($base, "checkers");
+
+$badge: map-get($other, "badge");
+$table: map-get($other, "table");
+
+$prototype: map-get($awesome, "prototype");
+
+
+@if $button {
+  @include buttonBase();
+}
+@if $navbar {
+  @include navbarBase();
+}
+@if $card {
+  @include cardBase();
+}
+@if $forms {
+  @include forms();
+}
+@if $checkers {
+  @include checkers();
+}
+@if $badge {
+  @include badge();
+}
+@if $table {
+  @include table();
+}
+@if $prototype {
+  @include prototype();
+}
+
+.link {
+  color: #406eec;
+  &:hover {
+    text-decoration: underline;
+  }
+}

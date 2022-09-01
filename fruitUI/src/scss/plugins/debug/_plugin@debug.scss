@@ -1,0 +1,29 @@
+@use "sass:meta";
+
+@import "./core/vars";
+@import "./core/functions";
+@import "./core/mixins";
+
+
+@import "./logic/debug@print";
+@import "./logic/debug@describe";
+@import "./logic/debug@it";
+@import "./logic/debug@assert";
+@import "./logic/debug@test";
+
+
+// $mappp: (
+//   16px: 1rem,
+//   32px: 2rem,
+// );
+
+// $tedouble: (
+//   1: 2,
+//   2: 4,
+// );
+
+// @include describe("they return rem value") {
+//   @include it("is should compile px to rem") {
+//     @include run(test('Rem', $mappp)); 
+//   }
+// }

@@ -1,0 +1,14 @@
+@use "basket" as * with (
+  $media-flex-dir: true,
+  $media-font: true,
+  $media-margin: true,
+  $media-padding: true,
+  $media-display: true,
+  $media-alignments: true,
+  $important: true,
+  $flex: true,
+  $grid: true,
+  $pct: true,
+);
+
+@include useShades(900,50);

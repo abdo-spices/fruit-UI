@@ -1,0 +1,37 @@
+@mixin cardBase {
+  .card {
+    display: block;
+    padding: $padding;
+    border: $border-thickness solid #ddd;
+    border-radius: $border-radius;
+    box-shadow: $base-box-shadow;
+    background-color: #fff;
+    &-title {
+      font-weight: 600;
+      font-size: $font-md;
+      letter-spacing: 1px;
+    }
+    &-body {
+      .card-text {
+        margin: $margin 0;
+        font-size: $font-sm;
+      }
+      .card-img {
+        width: 100%;
+        border-radius: $border-radius;
+      }
+      a {
+        color: #2958db;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @include useTheme {
+    .card {
+      border-color: rgb(54, 52, 56);
+    }
+  }
+}

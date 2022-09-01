@@ -1,0 +1,351 @@
+<div class="stage  anim-slide-right anim-break">
+  <h1 class="text-center h2">components</h1>
+  <CH.Scrollycoding>
+
+  there is three types of components base , other , awsesome
+  
+  ```scss main.scss focus=4:19
+  ⠀
+  ⠀
+  @use "basket" as * with (
+    $components: (
+      base: (
+        button: ture,
+        navbar: ture,
+        card: ture,
+        forms: ture,
+        checkers: ture,
+      ),
+      other: (
+        badge: ture,
+        table: ture,
+      ),
+      awesome: (
+        prototype: ture,
+      ),
+    ),
+  );
+  ⠀
+  ⠀
+  ```
+  ---
+  
+  every component has value true it well be rendered
+  
+  ```scss main.scss focus=4:8,11:12,15
+  @use "basket" as * with (
+    $components: (
+      base: (
+        button: ture,
+        navbar: ture,
+        card: ture,
+        forms: ture,
+        checkers: ture,
+      ),
+      other: (
+        badge: ture,
+        table: ture,
+      ),
+      awesome: (
+        prototype: ture,
+      ),
+    ),
+  );
+  ```
+
+</CH.Scrollycoding>
+
+  <br />
+  <br />
+  <br />
+  <nav class="navbar">
+      <div class="brand">Brand Name</div>
+      <div class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </nav>
+
+<CH.Code>
+
+```html demo.html
+<nav class="navbar">
+    <div class="brand">Brand Name</div>
+    <div class="toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</nav>  
+```
+--- 
+
+```js app.js
+Navbar();
+```
+
+</CH.Code>
+  <br />
+  <br />
+
+<button class="btn">defuilt</button>
+
+```html
+<button class="btn">...</button>
+```
+
+<br />
+<br />
+
+<button class="btn-primary">primary</button>
+<button class="btn-secondary">secondary</button>
+<button class="btn-success">success</button>
+<button class="btn-info">info</button>
+<button class="btn-orange">orange</button>
+<button class="btn-error">error</button>
+<button class="btn-gray">gray</button>
+<button class="btn-black">black</button>
+<button class="btn-white">white</button>
+
+```html
+<button class="btn-primary">...</button>
+<button class="btn-secondary">...</button>
+<button class="btn-success">...</button>
+<button class="btn-info">...</button>
+<button class="btn-orange">...</button>
+<button class="btn-error">...</button>
+<button class="btn-gray">...</button>
+<button class="btn-black">...</button>
+<button class="btn-white">...</button>
+```
+
+<br />
+<br />
+
+<button class="btn-primary-outlined">primary</button>
+<button class="btn-secondary-outlined">secondary</button>
+<button class="btn-success-outlined">success</button>
+<button class="btn-info-outlined">info</button>
+<button class="btn-orange-outlined">orange</button>
+<button class="btn-error-outlined">error</button>
+<button class="btn-gray-outlined">gray</button>
+<button class="btn-black-outlined">black</button>
+<button class="btn-white-outlined">white</button>
+
+```html
+<button class="btn-primary-outlined">...</button>
+<button class="btn-secondary-outlined">...</button>
+<button class="btn-success-outlined">...</button>
+<button class="btn-info-outlined">...</button>
+<button class="btn-orange-outlined">...</button>
+<button class="btn-error-outlined">...</button>
+<button class="btn-gray-outlined">...</button>
+<button class="btn-black-outlined">...</button>
+<button class="btn-white-outlined">...</button>
+```
+
+<br />
+<br />
+
+<button class="btn-primary-flat">primary</button>
+<button class="btn-secondary-flat">secondary</button>
+<button class="btn-success-flat">success</button>
+<button class="btn-info-flat">info</button>
+<button class="btn-orange-flat">orange</button>
+<button class="btn-error-flat">error</button>
+
+```html
+<button class="btn-primary-flat">...</button>
+<button class="btn-secondary-flat">...</button>
+<button class="btn-success-flat">...</button>
+<button class="btn-info-flat">...</button>
+<button class="btn-orange-flat">...</button>
+<button class="btn-error-flat">...</button>
+```
+
+<br/>
+<br/>
+
+  <div class="prototype p-5">
+    <div class="prototype-gap my-5">
+      <div class="w-7">
+      <div class="card">
+        <div class="card-body">
+          <img class="card-img" src="https://www.gezondheidsnet.nl/sites/gezondheidsnet/files/styles/pol_carousel/public/gettyimages-1318912410.jpg?itok=6jV1wFFx" />
+          <div class="card-title">title</div>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod</p>
+          <button class="btn-primary">read more</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+```html
+<div class="card">
+  <div class="card-body">
+    <img class="card-img" src="..." />
+    <div class="card-title">...</div>
+    <p class="card-text">...</p>
+    <button class="btn-primary">...</button>
+  </div>
+</div>
+```
+
+<br/>
+<br/>
+
+<div class="card">
+  <input class="switch" type="checkbox" />
+</div>
+
+```html 
+<input class="switch" type="checkbox" />
+```
+<br/>
+<br/>
+<div class="card">
+  <div class="form-part">
+    <input class="radio" type="radio" name="one" value="ture" />
+  </div>
+  <div class="form-part">
+    <input class="radio" type="radio" name="one" value="false" />
+  </div>
+</div>
+
+```html 
+<input class="radio" type="radio" />
+```
+
+<br/>
+<br/>
+<div class="card">
+  <input class="checkbox" type="checkbox" id="checky110" />
+</div>
+
+```html
+<input class="checkbox" type="checkbox"/>
+```
+
+<br/>
+<br/>  
+<div class="card">
+  <form class="form-group">
+    <label class="">email</label>
+    <input class="form" type="email" placeholder="enter your email" />
+    <label class="">password</label>
+    <input class="form" type="password" placeholder="enter your password" />
+    <div class="form-part">
+      <input class="checkbox" type="checkbox" id="checky11" />
+      <label class="label" for="checky11">check me</label>
+    </div>
+    <div class="form-part">
+      <input class="radio" type="radio" id="le1" name="one" value="ture" />
+      <label for="le1" class="label">one</label>
+    </div>
+    <div class="form-part">
+      <input class="radio" type="radio" id="e2" name="one" value="false" />
+      <label for="e2" class="label">tow</label>
+    </div>
+    <div class="form-part">
+      <input class="btn-primary" type="submit" value="submit" />
+    </div>
+  </form>
+</div>
+
+
+```html 
+<form class="form-group">
+  <label class="label">email</label>
+  <input class="form" ... />
+  <label class="label">password</label>
+  <input class="form" ... />
+  <div class="form-part">
+    <input class="checkbox" ... />
+    <label class="label" ... >check me</label>
+  </div>
+  <div class="form-part">
+    <input class="radio" ... />
+    <label class="label" ... >one</label>
+  </div>
+  <div class="form-part">
+    <input class="radio" ... />
+    <label class="label" ... >tow</label>
+  </div>
+  <div class="form-part">
+    <input class="btn-primary" ... />
+  </div>
+</form>
+```
+
+<br/>
+<br/>
+<table class="table">
+<thead>
+  <tr>
+    <th>#</th>
+    <th>First</th>
+    <th>Last</th>
+    <th>Handle</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <th>1</th>
+    <td>Mark</td>
+    <td>Otto</td>
+    <td>@mdo</td>
+  </tr>
+  <tr>
+    <th>2</th>
+    <td>Jacob</td>
+    <td>Thornton</td>
+    <td>@fat</td>
+  </tr>
+  <tr>
+    <th>3</th>
+    <td>Larry</td>
+    <td>the Bird</td>
+    <td>@twitter</td>
+  </tr>
+</tbody>
+</table>
+
+```html
+<table class="table">
+  <thead>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+</table>
+```
+<br/>
+<br/>
+
+<div>
+
+</div>
+
+</div>

@@ -1,0 +1,16 @@
+@mixin badge {
+  .badge {
+    border-radius: $border-radius * 4;
+    padding: math.div($padding, 4) math.div($padding, 2);
+    font-size: $font-xxs;
+    font-weight: normal;
+    display: inline-block;
+  }
+  @if $uitl-handler == false {
+    @each $key, $val in $theme-colors {
+      .badge-#{$key} {
+        background-color: #{$val};
+      }
+    }
+  }
+}

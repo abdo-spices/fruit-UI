@@ -1,0 +1,79 @@
+@mixin buttonBase() {
+  // * to be inherited form (btn,btn-flat,btn-outlined)
+  %btn {
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: $font-xs;
+    display: inline-block;
+    transition: all 0.1s ease-in;
+    border-radius: $border-radius;
+    padding: $padding * 0.9 $padding * 2;
+    &:hover {
+      filter: brightness(1.07);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  %btn-outlined {
+    background-color: transparent;
+    padding: $padding * 0.8 $padding * 1.84;
+  }
+  // * default button
+  .btn {
+    @extend %btn;
+    background-color: $blue-500;
+    color: white;
+  }
+  // * looping through theme-colors to generate color variants
+  @each $key, $colors-bg, $colors-fg in $theme-colors {
+    // * colored button like ( btn-primary, btn-secondary, btn-success)
+    .btn-#{$key} {
+      @extend %btn;
+      @if $uitl-handler == false {
+        color: $colors-fg;
+        background-color: $colors-bg;
+      }
+    }
+    // * outlined button like ( btn-primary-outlined, btn-secondary-outlined, btn-success-outlined)
+    .btn-#{$key}-outlined {
+      @extend %btn;
+      @extend %btn-outlined;
+      color: $colors-bg;
+      border: $border-thickness * 2 solid $colors-bg;
+      &:hover {
+        color: $colors-fg;
+        background-color: $colors-bg;
+      }
+    }
+  }
+
+  // * overrideing white button
+  .btn-white-outlined {
+    color: #61617c;
+    border-color: #61617c;
+    &:hover {
+      border-color: $white;
+    }
+  }
+  // * looping through flat-colors to generate color variants
+  @each $key, $colors-bg, $colors-fg, $colors-fg-dark,
+    $colors-bg-dark in $flat-colors
+  {
+    // * flat button like ( btn-primary-flat, btn-secondary-flat, btn-success-flat)
+    .btn-#{$key}-flat {
+      @extend %btn;
+      color: $colors-fg;
+      background-color: $colors-bg;
+    }
+    // *  dark mode
+    @include useTheme {
+      .btn-#{$key}-flat {
+        color: $colors-fg-dark;
+        background-color: $colors-bg-dark;
+      }
+    }
+  }
+}
