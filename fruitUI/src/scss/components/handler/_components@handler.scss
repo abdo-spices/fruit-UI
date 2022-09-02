@@ -13,18 +13,18 @@
 
 $components: (
   base: (
-    button: ture,
-    navbar: ture,
-    card: ture,
-    forms: ture,
-    checkers: ture,
+    button: false,
+    navbar: false,
+    card: false,
+    forms: false,
+    checkers: false,
   ),
   other: (
-    badge: ture,
-    table: ture,
+    badge: false,
+    table: false,
   ),
   awesome: (
-    prototype: ture,
+    prototype: false,
   ),
 ) !default;
 

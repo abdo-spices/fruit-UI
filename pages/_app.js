@@ -4,11 +4,10 @@ import {Navbar} from "../fruitUI/dist/js/fruitUI.js";
 import { useEffect } from "react";
 import Layout from "./components/Layout";
 
-
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     Navbar();
-  },);
+  },[]);
   return (
     <>
       <Layout>

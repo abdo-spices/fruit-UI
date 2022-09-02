@@ -6,18 +6,19 @@
 
 # FruitUI a moduler styling framework 
 
-when you use bootstarp for just the grid system or use the responsive navbar component
-if you want to use the grid system you have to load about **15k** lines of css code if you loaded the full bootstarp bundle if you use the bootstarp grid preset it contains {padding ,margin, etc...} it's about **6k** lines of code I don't what all this stuff so I create this library with it you can import just one component like just the navbar or import just the grid system 
+when you use bootstarp for just the grid system or use the responsive navbar component ,
+if you want to use the grid system you have to load about **15k** lines of css code and if you loaded the full bootstarp bundle or if you use the bootstarp grid preset it contains {padding ,margin, etc...} it's about **6k** lines of code I don't want all this stuff so I create this library with it. 
+
+So you can import just one component like just the navbar or import just the grid system 
 ## Getting Started
 
 ```bash
-npm i fruitUI 
+npm i spices-fruitui 
 # or 
-yarn add fruitUI
+yarn add spices-fruitui
 # or 
-pnpm add fruitUI
+pnpm add spices-fruitui
 ```
-
 
 fruitUI still on development step there is a lot of stuff to do 
 
@@ -47,7 +48,7 @@ fruitUI still on development step there is a lot of stuff to do
 
 ### awesome components
 
-- [ ] portotype 0%
+- [ ] prototype 0%
 
 
 # experimental

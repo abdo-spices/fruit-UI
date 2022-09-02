@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  *  just call the function and it will active the toggle*/
 const Navbar = () => {
@@ -8,12 +6,5 @@ const Navbar = () => {
         navbar.classList.toggle("active");
     });
 };
-
-const Button = () => {
-    console.log("\n \n \n \n \n 99999999999999999990000000000000000");
-};
-
-var fruitUI = { Navbar, Button };
-
-module.exports = fruitUI;
-//# sourceMappingURL=fruitUI.js.map
+export default Navbar;
+//# sourceMappingURL=navbar.js.map

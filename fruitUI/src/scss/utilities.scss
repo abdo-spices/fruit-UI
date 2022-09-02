@@ -5,6 +5,11 @@
   $media-padding: true,
   $media-display: true,
   $media-alignments: true,
+  $typography-util: true,
+  $spacing-util: true,
+  $size-util: true,
+  $align-util: true,
+  $other-util: true,
 );
 
 @include useShades(900,50);

@@ -5,10 +5,31 @@
   $media-padding: true,
   $media-display: true,
   $media-alignments: true,
+  $typography-util: true,
+  $spacing-util: true,
+  $size-util: true,
+  $align-util: true,
+  $other-util: true,
   $important: true,
   $flex: true,
   $grid: true,
   $pct: true,
+  $components: (
+    base: (
+      button: true,
+      navbar: true,
+      card: true,
+      forms: true,
+      checkers: true,
+    ),
+    other: (
+      badge: true,
+      table: true,
+    ),
+    awesome: (
+      prototype: true,
+    ),
+  )
 );
 
-@include useShades(900,50);
+@include useShades(900, 50);

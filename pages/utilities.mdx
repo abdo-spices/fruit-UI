@@ -1,10 +1,20 @@
 <div class="stage anim-slide-right anim-break">
   <h2 class="h2 text-center">utilities</h2>
   <p class="text">there is some utilities that looks like <a class="link" href="https://tailwindcss.com/" target="_blank">tailwind utilities</a> 
-  becaues our libarary is tailwind inspirde</p>
+  becaues our libarary is tailwind inspired</p>
+
+```scss main.scss focus=2:6
+@use "basket" as * with (
+  $typography-util: true,
+  $spacing-util: true,
+  $size-util: true,
+  $align-util: true,
+  $other-util: true,
+);
+```
   <p class="text"></p>
   <h3 class="h3 text-center">spacing</h3>
-  <p class="text">utilities for spacing like padding, margin, gap you 
+  <p class="text">utilities for spacing like padding, margin and gap you 
     have to type \{p,m,gap - amount\} let me explan more </p>
   <p class="text">padding uses "p" as shorthand and margin uses "m" the defuilt values range is 12 </p>
   
@@ -17,13 +27,13 @@ Let's strart here we have padding utility classes for exmaple
   ```html app.html focus=3:9
   ⠀
   ⠀
-  <div class="padding-all-edges-24px"></div>
-  <div class="padding-top-and-bottom-24px"></div>
-  <div class="padding-right-and-left-24px"></div>
-  <div class="padding-top-24px"></div>
-  <div class="padding-right-24px"></div>
-  <div class="padding-bottom-24px"></div>
-  <div class="padding-left-24px"></div>
+  <div class="padding-all-edges-20px"></div>
+  <div class="padding-top-and-bottom-20px"></div>
+  <div class="padding-right-and-left-20px"></div>
+  <div class="padding-top-20px"></div>
+  <div class="padding-right-20px"></div>
+  <div class="padding-bottom-20px"></div>
+  <div class="padding-left-20px"></div>
   ⠀
   ⠀
   ```
@@ -34,31 +44,31 @@ Let's strart here we have padding utility classes for exmaple
   ```html app.html focus=3:9
   ⠀
   ⠀
-  <div class="p-all-24px"></div>
-  <div class="p-top-bottom-24px"></div>
-  <div class="p-right-left-24px"></div>
-  <div class="p-top-24px"></div>
-  <div class="p-right-24px"></div>
-  <div class="p-bottom-24px"></div>
-  <div class="p-left-24px"></div>
+  <div class="p-all-20px"></div>
+  <div class="p-top-bottom-20px"></div>
+  <div class="p-right-left-20px"></div>
+  <div class="p-top-20px"></div>
+  <div class="p-right-20px"></div>
+  <div class="p-bottom-20px"></div>
+  <div class="p-left-20px"></div>
   ⠀
   ⠀
   ```
 
   ---
 
-  replacing the dirctions removing 'all' and replacing top bottom dirction with 'y' axis and right left to 'x' axis and right
-  replacing top with t etc...
+  replacing the directions removing 'all' and replacing top bottom dirction with 'y' axis and right left to 'x' axis and
+  replacing top = t , right = r left = l , bottom = b etc...
   ```html app.html focus=3:9
   ⠀
   ⠀
-  <div class="p-24px"></div>
-  <div class="py-24px"></div>
-  <div class="px-24px"></div>
-  <div class="pt-24px"></div>
-  <div class="pr-24px"></div>
-  <div class="pb-24px"></div>
-  <div class="pl-24px"></div>
+  <div class="p-20px"></div>
+  <div class="py-20px"></div>
+  <div class="px-20px"></div>
+  <div class="pt-20px"></div>
+  <div class="pr-20px"></div>
+  <div class="pb-20px"></div>
+  <div class="pl-20px"></div>
   ⠀
   ⠀
   ```
@@ -79,6 +89,28 @@ Let's strart here we have padding utility classes for exmaple
   <div class="pl-6"></div>
   ⠀
   ⠀
+  ```
+  ---
+
+  sass map
+
+  ```scss maps.scss 
+  $spacing: (
+    "auto": auto,
+    0: 0,
+    1: Rem(2px),
+    2: Rem(5px),
+    3: Rem(8px),
+    4: Rem(12px),
+    5: Rem(16px),
+    6: Rem(20px),
+    7: Rem(24px),
+    8: Rem(28px),
+    9: Rem(34px),
+    10: Rem(40px),
+    11: Rem(45px),
+    12: Rem(56px),
+  ),
   ```
 
   ---

@@ -1,5 +1,5 @@
 /** 
- *  just call the function and it well active the toggle*/
+ *  just call the function and it will active the toggle*/
 const Navbar = () =>  {
   const navbar :Element = document.querySelector(".navbar");
   document.querySelector(".toggle").addEventListener("click", () => {
