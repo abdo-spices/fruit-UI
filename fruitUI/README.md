@@ -10,6 +10,8 @@ if you want to use the grid system you have to load about **15k** lines of css c
 So you can import just one component like just the navbar or import just the grid system 
 ## Getting Started
 
+docs https://fruit-ui.vercel.app
+
 ```bash
 npm i spices-fruitui 
 # or 
