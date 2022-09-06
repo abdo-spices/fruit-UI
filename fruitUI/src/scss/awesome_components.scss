@@ -1,3 +1,7 @@
-@import "./components";
-
-@include prototype();
+@use "./components" as * with (
+  $components: (
+    awesome: (
+      prototype: true,
+    ),
+  )
+);

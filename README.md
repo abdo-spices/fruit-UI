@@ -2,7 +2,7 @@
   <img src="./public/fruitUI.png"/>
 </div>
 
-
+<a href="https://sil-spices.vercel.app/">under SIL license</a>
 
 # FruitUI a moduler styling framework 
 
@@ -11,6 +11,8 @@ if you want to use the grid system you have to load about **15k** lines of css c
 
 So you can import just one component like just the navbar or import just the grid system 
 ## Getting Started
+
+docs https://fruit-ui.vercel.app
 
 ```bash
 npm i spices-fruitui 
@@ -21,6 +23,10 @@ pnpm add spices-fruitui
 ```
 
 fruitUI still on development step there is a lot of stuff to do 
+
+
+- [ ] full RTL support 0%
+- [x] dark mode 10%
 
 # Components
 

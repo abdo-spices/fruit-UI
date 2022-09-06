@@ -28,10 +28,4 @@
       }
     }
   }
-
-  @include useTheme {
-    .card {
-      border-color: rgb(54, 52, 56);
-    }
-  }
 }

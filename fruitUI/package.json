@@ -1,7 +1,15 @@
 {
   "name": "spices-fruitui",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "a moduler styling framework",
-  "keywords": ["UI","fruitUI"],
-  "license": "SIL"
+  "keywords": [
+    "UI",
+    "fruitUI"
+  ],
+  "homepage": "http://fruit-ui.vercel.app",
+  "license": "SIL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blackPeppper/fruitUI"
+  }
 }

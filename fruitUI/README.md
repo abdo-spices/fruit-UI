@@ -1,6 +1,8 @@
 <div align="center">
-  <img src="./fruitUI.png"/>
+  <img src="https://github.com/blackPeppper/fruitUI/raw/master/public/fruitUI.png"/>
 </div>
+
+<a href="https://sil-spices.vercel.app/">under SIL license</a>
 
 # FruitUI a moduler styling framework 
 
@@ -21,6 +23,10 @@ pnpm add spices-fruitui
 ```
 
 fruitUI still on development step there is a lot of stuff to do 
+
+
+- [ ] full RTL support 0%
+- [x] dark mode 10%
 
 # Components
 

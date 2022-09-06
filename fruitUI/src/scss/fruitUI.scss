@@ -36,4 +36,9 @@
 
 @include renderFrame("slideRight");
 
-
+.link {
+  color: #406eec;
+  &:hover {
+    text-decoration: underline;
+  }
+}

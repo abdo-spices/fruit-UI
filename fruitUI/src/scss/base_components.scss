@@ -1,11 +1,11 @@
-@import "./components";
-
-@include buttonBase();
-
-@include navbarBase();
-
-@include cardBase();
-
-@include forms();
-
-@include checkers();
+@use "./components" as * with (
+  $components: (
+    base: (
+      button: true,
+      navbar: true,
+      card: true,
+      forms: true,
+      checkers: true,
+    ),
+  )
+);

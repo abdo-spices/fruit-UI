@@ -1,5 +1,8 @@
-@import "./components";
-
-@include badge();
-
-@include table();
+@use "./components" as * with (
+  $components: (
+    other: (
+      badge: true,
+      table: true,
+    ),
+  )
+);
