@@ -17,7 +17,7 @@ export default function Home() {
         <p className="text text-center"><a className="link" href="https://forms.gle/ihDprgoWNfEo2GwQ6">give us your feedback</a> </p>
         <Intro />
         <Config />
-        <p class="text line-height">this will work just if using a module bundler or a javascript framework  
+        <p className="text line-height">this will work just if using a module bundler or a javascript framework  
         but if are using html or project that uses html as main file you can import from <kbd className="black p-3 br-sm">node_modules/spices-fruitui</kbd>  </p>
         <br />
         <br />

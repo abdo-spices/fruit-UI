@@ -23,8 +23,8 @@ const ElSlider = () => {
             <img src="/img.jpg" />
           </span>
         </div>
-        <span class="prev"></span>
-        <span class="next"></span>
+        <span className="prev"></span>
+        <span className="next"></span>
       </div>
     </>
   );
