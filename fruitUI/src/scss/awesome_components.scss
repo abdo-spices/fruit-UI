@@ -1,7 +1,0 @@
-@use "./components" as * with (
-  $components: (
-    awesome: (
-      prototype: true,
-    ),
-  )
-);

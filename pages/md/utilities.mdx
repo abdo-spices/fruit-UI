@@ -7,9 +7,9 @@
 @use "basket" as * with (
   $typography-util: true,
   $spacing-util: true,
-  $size-util: true,
   $align-util: true,
   $other-util: true,
+  $size-util: true,
 );
 ```
   <p class="text"></p>
@@ -297,6 +297,25 @@ Let's strart here we have padding utility classes for exmaple
     
     ---
 
+    sass map
+    
+    ```scss map.scss 
+    $size: (
+      "full": 100%,
+      "auto": auto,
+      "screen": 100vh,
+      1: Rem(10px),
+      2: Rem(30px),
+      3: Rem(50px),
+      4: Rem(80px),
+      5: Rem(130px),
+      6: Rem(180px),
+      7: Rem(240px),
+      8: Rem(270px),
+      9: Rem(350px),
+      10: Rem(420px),
+    ),
+    ```
     </CH.Scrollycoding>
 
   <br/>
@@ -371,20 +390,56 @@ Let's strart here we have padding utility classes for exmaple
     ⠀
     ```
     
-    ---
 
-    font size 
 
-    ```html app.html focus=1:8
-    <div class="font-xxs"></div>
-    <div class="font-xs"></div>
-    <div class="font-sm"></div>
-    <div class="font-md"></div>
-    <div class="font-lg"></div>
-    <div class="font-xl"></div>
-    <div class="font-xxl"></div>
-    <div class="font-xxxl"></div>
-    ```
+    </CH.Scrollycoding>
+    <br />
+    <h3 class="h3 text-center">typography</h3>
+    <br />
+    <CH.Scrollycoding>
+
+      ```html app.html focus=1:8
+      <div class="font-xxs"></div>
+      <div class="font-xs"></div>
+      <div class="font-sm"></div>
+      <div class="font-md"></div>
+      <div class="font-lg"></div>
+      <div class="font-xl"></div>
+      <div class="font-xxl"></div>
+      <div class="font-xxxl"></div>
+      ```
+      ---
+      
+      ```html app.html focus=1:6
+      <div class="h1"></div>
+      <div class="h2"></div>
+      <div class="h3"></div>
+      <div class="h4"></div>
+      <div class="h5"></div>
+      <div class="h6"></div>
+      ```
+      ---
+
+      ```scss map.scss
+      $heading: (
+        "h1": 5.5rem,
+        "h2": 4.5rem,
+        "h3": 3.5rem,
+        "h4": 2.5rem,
+        "h5": 1.5rem,
+        "h6": 1rem,
+      ),
+      $font: (
+        xxs: $font-xxs,
+        xs: $font-xs,
+        sm: $font-sm,
+        md: $font-md,
+        lg: $font-lg,
+        xl: $font-xl,
+        xxl: $font-xxl,
+        xxxl: $font-xxxl,
+      ) 
+      ```
 
     </CH.Scrollycoding>
 
@@ -392,15 +447,10 @@ Let's strart here we have padding utility classes for exmaple
   <br/>
   <br/>
 
-  <h3 class="h3 text-center">size</h3>
-  <p class="text"> </p>
-
-    responsive layout the propreties support media queries 
-
-    flex-dir, font, margin, padding, display, alignments
-
-    use \{xs,sm,md,lg,xl\} with ':' and your class
-
+  <h3 class="h3 text-center">media queries</h3>
+  <p class="text"> 
+    responsive layout the propreties support media queries flex-dir, font, margin, padding, display, alignments use \{xs,sm,md,lg,xl\} with ':' and your class
+  </p>
 ```html app.html
 <div class="flex">
   <div class="justify-center items-center px-2 my-7"></div>
@@ -502,16 +552,6 @@ Let's strart here we have padding utility classes for exmaple
   ```
 
   --- 
-  add important flag to utility
-  ```scss main.scss focus=2:4
-  @use "basket" as * with (
-    $utilities: (
-      important: true,
-    ),
-  );
-  ```
-  --- 
-
   create new utility class
 
   ```scss main.scss focus=2:15
@@ -533,11 +573,38 @@ Let's strart here we have padding utility classes for exmaple
   );
   ```
 
+</CH.Scrollycoding>
+<br />
+
+<h3 class="h3 text-center">color utilities</h3>
+
+<br />
+
+<CH.Scrollycoding>
+
+
+  include shades mixin they take to args (end-of-generating : 600, start-of-generating: 100) from 50 to 900
+  keys 
+
+  ```scss main.scss foucs=2:10
+  ⠀
+  ⠀
+  ⠀
+  @use "basket" as * with (
+    $a-var: "...",
+  );
+
+  @include useShades();
+  ⠀
+  ⠀
+  ⠀
+  ⠀
+  ⠀
+  ```
   ---
 
-  color utilities
-
-  ```scss main.scss focus=2:12
+  you can add custom colors 
+  ```scss main.scss focus=2:8,11
   @use "basket" as * with (
     $colors: (
       custom: (
@@ -549,9 +616,50 @@ Let's strart here we have padding utility classes for exmaple
   );
 
   @include useShades(900,50);
+  ⠀
 
   ```
 
+  ---
+  all standerd colors
+  
+  ```scss map.scss focus=3:11
+
+  $colors: (
+      pink: (/* ... */),
+      purple: (/* ... */),
+      blue: (/* ... */),
+      sky: (/* ... */),
+      green: (/* ... */),
+      yellow: (/* ... */),
+      orange: (/* ... */),
+      red: (/* ... */),
+      gray: (/* ... */),
+  );
+
+  ```
+  ---
+
+  
+  exmaple
+
+  <CH.Code>
+
+  ```scss main.scss focus=11
+
+  ```
+  ---
+
+  ```html index.html focus=3,4
+  ⠀
+  ⠀
+    <div class="text-red-100 bg-red-600"></div>
+    <div class="text-custom-100 bg-custom-50"></div>
+  ⠀
+  ⠀
+    ```
+  </CH.Code>
+  
 
 </CH.Scrollycoding>
 

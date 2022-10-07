@@ -5,23 +5,26 @@
   ```scss main.scss focus=3
   ⠀
   ⠀
-  @import "node_modules/~/fruitUI/src/scss/basket";
+  @import "node_modules/fruitUI/src/scss/import/basket";
   ⠀
   ⠀
   ```
-
 
 
   ---
-  initialize it to edit variables 
-  ```scss main.scss focus=3:6
-  ⠀
-  ⠀
+  initialize it to edit variables, if you want base layouting enable base
+  ```scss main.scss focus=1:3
     @use "~/basket" as * with (
-      $important: false,
+      $base: true,
     );
-  ⠀
-  ⠀
+  ```
+  ---
+
+  importing javascript 
+
+  ```js app.js focus=1
+    import { Navbar, Alert } form "spices-fruitui"
   ```
 
 </CH.Scrollycoding>
+

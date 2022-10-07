@@ -1,11 +1,12 @@
+import { UIComponent } from '../types/types';
+
 /** 
- *  just call the function and it will active the toggle*/
-const Navbar = () =>  {
-  const navbar :Element = document.querySelector(".navbar");
-  document.querySelector(".toggle").addEventListener("click", () => {
-    navbar.classList.toggle("active");
+ *  just call the function and it will active the toggle */
+const Navbar = () :void  => {
+  const navbar = document.querySelector(".navbar");
+  document.querySelector(".toggle")?.addEventListener("click", () => {
+    navbar?.classList.toggle("active"); 
   });
 };
-
 
 export default Navbar;

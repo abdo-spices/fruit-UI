@@ -2,7 +2,6 @@
   <img src="./public/fruitUI.png"/>
 </div>
 
-<a href="https://sil-spices.vercel.app/">under SIL license</a>
 
 # FruitUI a moduler styling framework 
 
@@ -10,6 +9,10 @@ when you use bootstarp for just the grid system or use the responsive navbar com
 if you want to use the grid system you have to load about **15k** lines of css code and if you loaded the full bootstarp bundle or if you use the bootstarp grid preset it contains {padding ,margin, etc...} it's about **6k** lines of code I don't want all this stuff so I create this library with it. 
 
 So you can import just one component like just the navbar or import just the grid system 
+# License
+
+<a href="https://sil-spices.vercel.app/">under SIL license</a>
+
 ## Getting Started
 
 docs https://fruit-ui.vercel.app
@@ -40,12 +43,12 @@ fruitUI still on development step there is a lot of stuff to do
 
 ### other components
 
-- [x] badge 60%
+- [x] badge 99%
 - [x] table 30%
-- [ ] alert 0%
+- [x] alert 80%
+- [x] slider 70%
 - [ ] modal 0%
 - [ ] accordion 0%
-- [ ] slider 0%
 - [ ] pagination 0%
 - [ ] spinners 0%
 - [ ] dropdown 0%
@@ -54,7 +57,7 @@ fruitUI still on development step there is a lot of stuff to do
 
 ### awesome components
 
-- [ ] prototype 0%
+- [x] prototype 100%
 
 
 # experimental
@@ -101,11 +104,6 @@ div {
 }
 ```
 
-- [x] util-handler 50%
-
-  it removes the duplicated porprties from components and let you to add the repeated components utilities and save some code
-  specialy when you have a lot of components in your porject
-
 - [ ] compress 0%
 
   it takes every property in any class have it and combines them into a single property extender
@@ -132,8 +130,8 @@ div {
 
 - [x] anim 60%
   
-  is built in animation libarray 
+  it is a built in animation libarray 
 
 - [x] debug 30%
   
-  is built in debuging and minimal unit testing  libarray
+  it is a built in debuging and minimal unit testing  libarray
